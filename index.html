@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Fraunces:opsz,wght@9..144,800&display=swap" rel="stylesheet">
+    <script>
+         tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: { 'Barlow': ['Fraunces', 'Barlow']},
+              colors: {
+                primary : "#83888F",
+                secondary: "#0E8784",
+                gray: "#333D4B",
+                bg: "#FAF8F6",
+                white: "#FEFCF7"
+              },
+            },
+          },
+        };
+    </script>
+    <title>Document</title>
+</head>
+<body>
+      <header class="flex flex-col items-center mt-10">
+        <nav class="flex flex-wrap gap-10 items-center max-md:max-w-full">
+            <a href="/" class="flex flex-col justify-center items-center self-stretch my-auto text-base font-bold leading-snug text-sky-700 capitalize w-[91px]">
+                <img  src="https://cdn.builder.io/api/v1/image/assets/TEMP/e8c51ca805b279df076e6c8c5958d9d0782802c5286d77b5188a4e08f979d384?apiKey=0b69390d977a4a878ed863a38b2aa8dd&" alt="EasySet24 Logo" class="object-contain aspect-[1.04] w-[46px]" />
+                <p><span class="text-sky-700">E</span>a<span class="text-sky-700">sy</span>Set24</p>
+            </a>
+            <form class="flex overflow-hidden gap-2.5 items-center self-stretch px-4 py-2 my-auto bg-white rounded border border-solid border-zinc-300 min-h-[40px] min-w-[240px] w-[600px] max-md:max-w-full">
+                <label for="searchInput" class="sr-only">Search</label>
+                <img  src="https://cdn.builder.io/api/v1/image/assets/TEMP/8321347a4af1b1df2a1685fbacd9228f8436dd4b1d03d45032d1f6f0d84b493b?apiKey=0b69390d977a4a878ed863a38b2aa8dd&" alt="Search icon" class="object-contain self-stretch my-auto w-6 aspect-square" />
+                <input type="search" id="searchInput" class="flex-1 border-none outline-none" aria-label="Search input" />
+            </form>
+            <section class="flex gap-4 justify-center items-center self-stretch my-auto min-w-[240px]">
+                <div class="flex gap-2 items-center  self-stretch my-auto">
+                    <button class="flex overflow-hidden gap-2.5 justify-center items-center self-stretch px-0.5 my-auto w-10 h-10 rounded border-2 border-solid bg-stone-50 border-stone-50 min-h-[40px]">
+                        <img  src="https://i.postimg.cc/mgTcYdmg/England.png" alt="English language selection" class="object-contain gap-2 self-stretch my-auto w-16 rounded-3xl aspect-square min-h-[20px]" />
+                    </button>
+                    <button class="flex overflow-hidden gap-2 justify-center items-center px-2.5 w-16 h-10 rounded bg-stone-50 min-h-[40px]">
+                        <img  src="https://i.postimg.cc/28RL6jvv/Icon-Buttons-1.png" alt="Notifications" class="object-contain self-stretch my-auto w-5 aspect-square" />
+                    </button>
+                    <button class="flex overflow-hidden gap-2 justify-center items-center px-2.5 w-10 h-10 rounded bg-stone-50 min-h-[40px]">
+                        <img  src="https://i.postimg.cc/mkdkZRGz/Icon-Buttons.png" alt="Messages" class="object-contain self-stretch my-auto w-5 aspect-square" />
+                    </button>
+                    <button class="flex overflow-hidden gap-2.5 justify-center items-center self-stretch px-1 my-auto w-10 h-10 rounded bg-stone-50 min-h-[40px]">
+                        <img  src="https://i.postimg.cc/PfKPQb8X/Phone.png" alt="Phone" class="object-contain self-stretch my-auto w-6 aspect-square" />
+                    </button>
+                </div>
+                <button class="flex gap-2 items-center self-stretch my-auto w-36 leading-snug">
+                    <img  src="https://cdn.builder.io/api/v1/image/assets/TEMP/7852f7e5396b3e09d79fade137f4b066df11922a078a741ec5f1586040ed546e?apiKey=0b69390d977a4a878ed863a38b2aa8dd&" alt="Profile picture" class="object-contain shrink-0 self-stretch my-auto w-10 aspect-square" />
+                    <div class="flex flex-col flex-1 shrink justify-center self-stretch my-auto basis-0 bg-stone-50">
+                        <p class="self-center text-sm font-extrabold text-sky-900">Your Account</p>
+                        <p class="w-full text-xs text-sky-700 max-w-[96px] min-w-[24px]">Anna Carinna</p>
+                    </div>
+                </button>
+            </section>
+        </nav>
+        <nav class="flex flex-wrap gap-4 justify-center items-center mt-10 max-w-full text-base font-medium leading-snug text-center capitalize whitespace-nowrap text-neutral-400 w-[808px]">
+            <button class="flex overflow-hidden flex-1 shrink gap-4 justify-center items-center self-stretch px-4 py-2.5 my-auto bg-white border border-solid basis-0 border-neutral-400 min-h-[40px] rounded-[30px]">Trip</button>
+            <button class="flex overflow-hidden flex-1 shrink gap-4 justify-center items-center self-stretch px-4 py-2.5 my-auto bg-white border border-solid basis-0 border-neutral-400 min-h-[40px] rounded-[30px]">%Deals</button>
+            <button class="flex overflow-hidden flex-1 shrink gap-4 justify-center items-center self-stretch px-4 py-2.5 my-auto font-bold text-white bg-sky-700 basis-0 min-h-[40px] rounded-[30px]">Hotel</button>
+            <button class="flex overflow-hidden flex-1 shrink gap-4 justify-center items-center self-stretch px-4 py-2.5 my-auto bg-white border border-solid basis-0 border-neutral-400 min-h-[40px] rounded-[30px]">Flight</button>
+            <button class="flex overflow-hidden flex-1 shrink gap-4 justify-center items-center self-stretch px-4 py-2.5 my-auto bg-white border border-solid basis-0 border-neutral-400 min-h-[40px] rounded-[30px]">Apartment</button>
+            <button class="flex overflow-hidden flex-1 shrink gap-4 justify-center items-center self-stretch px-4 py-2.5 my-auto bg-white border border-solid basis-0 border-neutral-400 min-h-[40px] rounded-[30px]">Camper</button>
+        </nav>
+    </header>
+    <section class="dream-place-container ml-[100px] mt-16 ">
+        <h2 data-layername="heading" class="w-full text-2xl font-bold leading-snug text-sky-700 capitalize max-md:max-w-full">
+            Where is your Next Dream Place?
+        </h2>
+        <p data-layername="description" class="mt-1 text-sm text-sky-700 capitalize">
+            Find exclusive Genius rewards in every corner of the world!
+        </p>
+    </section>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hotel Search Page</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-50">
+    
+      <div class="container mx-auto p-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+        <aside class=" p-4 rounded-lg">
+          <h2 class="text-xl font-bold mb-4">Filter By</h2>
+    
+          <div class="mb-6">
+            <h3 class="font-semibold mb-2">Popular Filters</h3>
+            <div class="space-y-2">
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-bleu-500">
+                <span>Breakfast Included</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500">
+                <span>All-Inclusive</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500">
+                <span>Free Cancellation</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500">
+                <span>Pool</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500">
+                <span>Pet Friendly</span>
+              </label>
+            </div>
+          </div>
+    
+          <div>
+            <h3 class="font-semibold mb-2">Accommodation Classification</h3>
+            <div class="space-y-2">
+              <label class="flex items-center space-x-2">
+                <input type="radio" name="stars" class="form-radio h-5 w-5 text-blue-500">
+                <span>5 Stars</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="radio" name="stars" class="form-radio h-5 w-5 text-blue-500">
+                <span>4 Stars</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="radio" name="stars" class="form-radio h-5 w-5 text-blue-500" checked>
+                <span>3 Stars</span>
+              </label>
+            </div>
+          </div>
+        </aside>
+        <div class="md:col-span-3 space-y-6">
+          <div class="bg-white p-4 rounded-lg shadow-md flex space-x-4">
+            <img src="https://i.postimg.cc/28hcb5tf/Picture.png" alt="Hotel Image" class="w-[200px] h-[240px] object-cover rounded-lg">
+            <div class="flex-grow">
+              <h3 class="text-xl font-bold">Radisson Blu</h3>
+              <p class="text-gray-500">Located in Downtown, 500m Distance to Shore</p>
+              <p class="text-sm text-gray-500 mt-2"><i class="fas fa-user"></i> 1 Adult, 2 Children · 4 Nights</p>
+              <div class="mt-4 flex items-center space-x-2">
+                <span class="bg-green-100 text-green-700 px-2 py-1 rounded">Very Good</span>
+                <span class="text-gray-500 text-sm">(2,259 Reviews)</span>
+              </div>
+              <p class="mt-2 text-blue-600 font-semibold">Includes taxes and charges</p>
+            </div>
+            <div class="text-right">
+              <p class="text-red-600 font-bold">12% Off</p>
+              <p class="text-2xl font-bold">$125</p>
+              <p class="text-sm text-gray-500">We have 8 left at 12% off</p>
+              <a href="#" class="mt-2 inline-block text-blue-600">See Availability</a>
+            </div>
+          </div>
+    
+          <!-- Hotel Card 2 -->
+          <div class="bg-white p-4 rounded-lg shadow-md flex space-x-4">
+            <img src="https://i.postimg.cc/43LBkHYp/Picture-1.png" alt="Hotel Image" class="w-[200px] h-[240px] object-cover rounded-lg">
+            <div class="flex-grow">
+              <h3 class="text-xl font-bold">Radisson Blu</h3>
+              <p class="text-gray-500">Located in Downtown, 500m Distance to Shore</p>
+              <p class="text-sm text-gray-500 mt-2"><i class="fas fa-user"></i> 1 Adult, 2 Children · 4 Nights</p>
+              <div class="mt-4 flex items-center space-x-2">
+                <span class="bg-green-100 text-green-700 px-2 py-1 rounded">Very Good</span>
+                <span class="text-gray-500 text-sm">(2,100 Reviews)</span>
+              </div>
+              <p class="mt-2 text-blue-600 font-semibold">Includes taxes and charges</p>
+            </div>
+            <div class="text-right">
+              <p class="text-red-600 font-bold">8% Off</p>
+              <p class="text-2xl font-bold">$145</p>
+              <p class="text-sm text-gray-500">We have 2 left at 8% off</p>
+              <a href="#" class="mt-2 inline-block text-blue-600">See Availability</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </body>
+    </html>
